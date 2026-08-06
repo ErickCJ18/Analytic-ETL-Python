@@ -34,7 +34,6 @@ El grado de concurrencia se controla con `MAX_WORKERS` en el `.env`
 
 ## Seguridad
 
-- Ninguna credencial ni nombre de servidor vive en el código porque todo sale de `.env`
-  (que nunca se sube al repositorio, ver `.gitignore`).
+- Ninguna credencial ni nombre de servidor vive en el código porque todo sale de `.env`.
 - Las inserciones usan `df.to_sql` de SQLAlchemy con los valores como parámetros
-  (`adapters/persistence/sql_repository.py`), nunca con SQL concatenado.
+  (`adapters/persistence/sql_repository.py`) y nunca con SQL concatenado.
