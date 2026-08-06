@@ -1,7 +1,6 @@
 # ETL con Python
 
-Pipeline ETL en Python que carga datos de clientes, productos, encuestas, comentarios
-sociales y reseñas web hacia SQL Server.
+Pipeline ETL en Python que carga datos de las dimension tables y fact tables hacia la base de datos analítica en SQL Server.
 
 ## Setup
 
