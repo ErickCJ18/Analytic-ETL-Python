@@ -1570,3 +1570,114 @@ AttributeError: 'coroutine' object has no attribute 'resumen'
 2026-08-05 22:02:05 | INFO     | main | entidad1: procesados=1, insertados=1, duplicados=0, rechazados=0
 2026-08-05 22:02:05 | INFO     | main | entidad3: procesados=3, insertados=3, duplicados=0, rechazados=0
 2026-08-05 22:02:05 | INFO     | main | entidad4: procesados=4, insertados=4, duplicados=0, rechazados=0
+2026-08-05 22:17:48 | INFO     | domain.classifiers.reviews | Derivando Clasificación desde Rating | filas=3
+2026-08-05 22:17:48 | INFO     | domain.classifiers.reviews | Distribución de Clasificación derivada: {'Positiva': 1, 'Neutra': 1, 'Negativa': 1}
+2026-08-05 22:17:48 | INFO     | domain.classifiers.comments | Derivando Clasificación desde Comentario | filas=2
+2026-08-05 22:17:48 | INFO     | domain.classifiers.comments | Distribución de Clasificación derivada: {'Positiva': 1, 'Negativa': 1}
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.dims.cliente | DimCliente: procesadas=6, validas=3, rechazadas=3
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.dims.cliente | DimCliente: procesadas=2, validas=1, rechazadas=1
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.dims.producto | products: procesadas=3, validas=2, rechazadas=1
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.opiniones | Iniciando limpieza de FactOpiniones | filas recibidas=3
+2026-08-05 22:17:48 | WARNING  | adapters.cleaners.facts.opiniones | 1 valores de PuntajeSatisfacción fuera de rango (1-5); se ajustan al límite más cercano
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.opiniones | FactOpiniones: procesadas=3, validas=2, rechazadas=1
+2026-08-05 22:17:48 | WARNING  | adapters.cleaners.facts.opiniones | FactOpiniones tuvo 1 filas rechazadas
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.reviews | Iniciando limpieza de FactReviews | filas recibidas=2
+2026-08-05 22:17:48 | WARNING  | adapters.cleaners.facts.reviews | 1 filas duplicadas por IdReview descartadas
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.reviews | FactReviews: procesadas=2, validas=1, rechazadas=1
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.comments | Iniciando limpieza de FactComments | filas recibidas=1
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.comments | FactComments: procesadas=1, validas=0, rechazadas=1
+2026-08-05 22:17:48 | WARNING  | adapters.cleaners.facts.comments | FactComments tuvo 1 filas rechazadas
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.dims.cliente | DimCliente: procesadas=2, validas=2, rechazadas=0
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.opiniones | Iniciando limpieza de FactOpiniones | filas recibidas=2
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.opiniones | FactOpiniones: procesadas=2, validas=2, rechazadas=0
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.reviews | Iniciando limpieza de FactReviews | filas recibidas=2
+2026-08-05 22:17:48 | INFO     | adapters.cleaners.facts.reviews | FactReviews: procesadas=2, validas=2, rechazadas=0
+2026-08-05 22:17:48 | INFO     | domain.classifiers.reviews | Derivando Clasificación desde Rating | filas=2
+2026-08-05 22:17:48 | INFO     | domain.classifiers.reviews | Distribución de Clasificación derivada: {'Positiva': 1, 'Negativa': 1}
+2026-08-05 22:30:36 | INFO     | infrastructure.database | Engine de SQLAlchemy creado
+2026-08-05 22:30:36 | INFO     | __main__ | === FASE 1: dimensiones (en paralelo) ===
+2026-08-05 22:30:36 | INFO     | __main__ | === Iniciando: procesar_dim_fecha ===
+2026-08-05 22:30:36 | INFO     | adapters.sources.dims.fecha | Generando calendario DimFecha | rango=2024-09-13 a 2025-09-14
+2026-08-05 22:30:36 | INFO     | __main__ | === Iniciando: procesar_dim_clasificacion ===
+2026-08-05 22:30:36 | INFO     | adapters.sources.dims.fecha | Calendario generado | total_fechas=367
+2026-08-05 22:30:36 | INFO     | adapters.cleaners.dims.fecha | Iniciando limpieza de DimFecha | filas recibidas=367
+2026-08-05 22:30:36 | INFO     | adapters.cleaners.dims.clasificacion | Iniciando limpieza de DimClasificacion | filas recibidas=3
+2026-08-05 22:30:36 | INFO     | __main__ | === Iniciando: procesar_dim_origen ===
+2026-08-05 22:30:36 | INFO     | adapters.cleaners.dims.fecha | DimFecha: procesadas=367, validas=367, rechazadas=0
+2026-08-05 22:30:36 | INFO     | adapters.cleaners.dims.clasificacion | DimClasificacion: procesadas=3, validas=3, rechazadas=0
+2026-08-05 22:30:36 | INFO     | adapters.sources.dims.origen | Generando catálogo DimOrigen | total_valores=5
+2026-08-05 22:30:36 | INFO     | __main__ | === Iniciando: procesar_dim_cliente ===
+2026-08-05 22:30:36 | INFO     | adapters.cleaners.dims.origen | Iniciando limpieza de DimOrigen | filas recibidas=5
+2026-08-05 22:30:36 | INFO     | adapters.cleaners.dims.origen | DimOrigen: procesadas=5, validas=5, rechazadas=0
+2026-08-05 22:30:36 | INFO     | __main__ | === Iniciando: procesar_dim_producto ===
+2026-08-05 22:30:36 | INFO     | adapters.sources.base_reader | Leyendo archivo: clients.csv
+2026-08-05 22:30:36 | INFO     | adapters.sources.base_reader | clients.csv: 500 fila(s) leída(s), estructura válida
+2026-08-05 22:30:36 | INFO     | adapters.sources.base_reader | Leyendo archivo: products.csv
+2026-08-05 22:30:36 | INFO     | adapters.cleaners.dims.cliente | DimCliente: procesadas=500, validas=500, rechazadas=0
+2026-08-05 22:30:36 | INFO     | adapters.sources.base_reader | products.csv: 200 fila(s) leída(s), estructura válida
+2026-08-05 22:30:36 | INFO     | adapters.cleaners.dims.producto | products: procesadas=200, validas=200, rechazadas=0
+2026-08-05 22:30:37 | INFO     | adapters.persistence.sql_repository | DimProducto: 200 fila(s) insertada(s)
+2026-08-05 22:30:37 | INFO     | __main__ | DimProducto: procesados=200, insertados=200, duplicados=0, rechazados=0
+2026-08-05 22:30:37 | INFO     | adapters.persistence.sql_repository | DimClasificacion: 3 fila(s) insertada(s)
+2026-08-05 22:30:37 | INFO     | adapters.persistence.sql_repository | DimOrigen: 5 fila(s) insertada(s)
+2026-08-05 22:30:37 | INFO     | __main__ | DimClasificacion: procesados=3, insertados=3, duplicados=0, rechazados=0
+2026-08-05 22:30:37 | INFO     | __main__ | DimOrigen: procesados=5, insertados=5, duplicados=0, rechazados=0
+2026-08-05 22:30:37 | INFO     | adapters.persistence.sql_repository | DimFecha: 367 fila(s) insertada(s)
+2026-08-05 22:30:37 | INFO     | __main__ | DimFecha: procesados=367, insertados=367, duplicados=0, rechazados=0
+2026-08-05 22:30:37 | INFO     | adapters.persistence.sql_repository | DimCliente: 500 fila(s) insertada(s)
+2026-08-05 22:30:37 | INFO     | __main__ | DimCliente: procesados=500, insertados=500, duplicados=0, rechazados=0
+2026-08-05 22:30:37 | INFO     | __main__ | === FASE 2: hechos (en paralelo, requieren dimensiones cargadas) ===
+2026-08-05 22:30:37 | INFO     | __main__ | === Iniciando: procesar_fact_opiniones ===
+2026-08-05 22:30:37 | INFO     | __main__ | === Iniciando: procesar_fact_reviews ===
+2026-08-05 22:30:37 | INFO     | adapters.sources.facts.opiniones | Cargando surveys_part1.csv (staging FactOpiniones)
+2026-08-05 22:30:37 | INFO     | __main__ | === Iniciando: procesar_fact_comments ===
+2026-08-05 22:30:37 | INFO     | adapters.sources.facts.reviews | Cargando web_reviews.csv (staging FactReviews)
+2026-08-05 22:30:37 | INFO     | adapters.sources.facts.comments | Cargando social_comments.csv (staging FactComments)
+2026-08-05 22:30:37 | INFO     | adapters.sources.facts.reviews | Filas cargadas desde web_reviews.csv | total=200
+2026-08-05 22:30:37 | INFO     | adapters.cleaners.facts.reviews | Iniciando limpieza de FactReviews | filas recibidas=200
+2026-08-05 22:30:37 | INFO     | adapters.cleaners.facts.reviews | FactReviews: procesadas=200, validas=200, rechazadas=0
+2026-08-05 22:30:37 | INFO     | adapters.sources.facts.comments | Filas cargadas desde social_comments.csv | total=200
+2026-08-05 22:30:37 | INFO     | adapters.sources.facts.opiniones | Filas cargadas desde surveys_part1.csv | total=500
+2026-08-05 22:30:37 | INFO     | domain.classifiers.reviews | Derivando Clasificación desde Rating | filas=200
+2026-08-05 22:30:37 | INFO     | adapters.cleaners.facts.comments | Iniciando limpieza de FactComments | filas recibidas=200
+2026-08-05 22:30:37 | INFO     | adapters.cleaners.facts.opiniones | Iniciando limpieza de FactOpiniones | filas recibidas=500
+2026-08-05 22:30:37 | INFO     | adapters.cleaners.facts.comments | FactComments: procesadas=200, validas=112, rechazadas=88
+2026-08-05 22:30:37 | INFO     | domain.classifiers.reviews | Distribución de Clasificación derivada: {'Positiva': 83, 'Negativa': 68, 'Neutra': 49}
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | Verificando estado de dimensiones antes de resolver keys | dims=['DimCliente', 'DimProducto', 'DimOrigen', 'DimFecha', 'DimClasificacion']
+2026-08-05 22:30:37 | WARNING  | adapters.cleaners.facts.comments | FactComments tuvo 88 filas rechazadas
+2026-08-05 22:30:37 | INFO     | adapters.cleaners.facts.opiniones | FactOpiniones: procesadas=500, validas=500, rechazadas=0
+2026-08-05 22:30:37 | INFO     | domain.classifiers.comments | Derivando Clasificación desde Comentario | filas=112
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | Verificando estado de dimensiones antes de resolver keys | dims=['DimCliente', 'DimProducto', 'DimOrigen', 'DimFecha', 'DimClasificacion']
+2026-08-05 22:30:37 | INFO     | domain.classifiers.comments | Distribución de Clasificación derivada: {'Positiva': 50, 'Negativa': 34, 'Neutra': 28}
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | Verificando estado de dimensiones antes de resolver keys | dims=['DimCliente', 'DimProducto', 'DimOrigen', 'DimFecha', 'DimClasificacion']
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimCliente verificada | filas=500
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimCliente verificada | filas=500
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimProducto verificada | filas=200
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimCliente verificada | filas=500
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimProducto verificada | filas=200
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimProducto verificada | filas=200
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimOrigen verificada | filas=5
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimOrigen verificada | filas=5
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimOrigen verificada | filas=5
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimFecha verificada | filas=367
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimFecha verificada | filas=367
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimFecha verificada | filas=367
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimClasificacion verificada | filas=3
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimClasificacion verificada | filas=3
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | Todas las dimensiones requeridas están cargadas correctamente
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | Todas las dimensiones requeridas están cargadas correctamente
+2026-08-05 22:30:37 | INFO     | adapters.persistence.key_resolvers.reviews | Iniciando resolución de surrogate keys para FactReviews | filas=200
+2026-08-05 22:30:37 | INFO     | adapters.persistence.key_resolvers.opiniones | Iniciando resolución de surrogate keys para FactOpiniones | filas=500
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | DimClasificacion verificada | filas=3
+2026-08-05 22:30:37 | INFO     | adapters.persistence.dim_verification | Todas las dimensiones requeridas están cargadas correctamente
+2026-08-05 22:30:37 | INFO     | adapters.persistence.key_resolvers.comments | Iniciando resolución de surrogate keys para FactComments | filas=112
+2026-08-05 22:30:37 | INFO     | adapters.persistence.key_resolvers.comments | FactComments_Keys: procesadas=112, validas=112, rechazadas=0
+2026-08-05 22:30:37 | WARNING  | adapters.persistence.key_resolvers.opiniones | 494 filas de FactOpiniones sin match en alguna dimensión
+2026-08-05 22:30:37 | INFO     | adapters.persistence.key_resolvers.reviews | FactReviews_Keys: procesadas=200, validas=200, rechazadas=0
+2026-08-05 22:30:37 | INFO     | adapters.persistence.key_resolvers.opiniones | FactOpiniones_Keys: procesadas=500, validas=6, rechazadas=494
+2026-08-05 22:30:37 | INFO     | adapters.persistence.sql_repository | FactComments: 112 fila(s) insertada(s)
+2026-08-05 22:30:37 | INFO     | __main__ | FactComments: procesados=200, insertados=112, duplicados=0, rechazados=88
+2026-08-05 22:30:37 | INFO     | adapters.persistence.sql_repository | FactOpiniones: 6 fila(s) insertada(s)
+2026-08-05 22:30:37 | INFO     | __main__ | FactOpiniones: procesados=500, insertados=6, duplicados=0, rechazados=494
+2026-08-05 22:30:37 | INFO     | adapters.persistence.sql_repository | FactReviews: 200 fila(s) insertada(s)
+2026-08-05 22:30:37 | INFO     | __main__ | FactReviews: procesados=200, insertados=200, duplicados=0, rechazados=0

@@ -37,8 +37,3 @@ except (TypeError, ValueError):
     MAX_WORKERS = 8
 if MAX_WORKERS < 0:
     MAX_WORKERS = 8
-
-# Cualquier SP que no esté en esta lista será rechazado por db.py antes de ejecutarse.
-ALLOWED_SPS = set(
-    sp.strip() for sp in os.getenv("ALLOWED_SPS", "").split(",") if sp.strip()
-)
