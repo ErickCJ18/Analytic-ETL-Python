@@ -1,0 +1,11 @@
+.env
+data/*.csv
+!data/.gitkeep
+logs/*.log
+!logs/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.vscode/

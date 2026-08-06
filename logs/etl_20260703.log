@@ -1,0 +1,42 @@
+2026-07-03 08:06:35 | INFO     | src.db | Engine de SQLAlchemy creado
+2026-07-03 08:06:35 | INFO     | __main__ | === Iniciando: procesar_clientes ===
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | Leyendo archivo: clients.csv
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | clients.csv: 500 fila(s) leída(s), estructura válida
+2026-07-03 08:06:35 | INFO     | src.cleaners.clientes_cleaner | clients: procesadas=500, validas=500, rechazadas=0
+2026-07-03 08:06:35 | INFO     | src.uploader | clients: 500 fila(s) insertada(s)
+2026-07-03 08:06:35 | INFO     | __main__ | clients: procesados=500, insertados=500, duplicados=0, rechazados=0
+2026-07-03 08:06:35 | INFO     | __main__ | === Iniciando: procesar_products ===
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | Leyendo archivo: products.csv
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | products.csv: 200 fila(s) leída(s), estructura válida
+2026-07-03 08:06:35 | INFO     | src.cleaners.products_cleaner | products: procesadas=200, validas=200, rechazadas=0
+2026-07-03 08:06:35 | INFO     | src.uploader | products: 200 fila(s) insertada(s)
+2026-07-03 08:06:35 | INFO     | __main__ | products: procesados=200, insertados=200, duplicados=0, rechazados=0
+2026-07-03 08:06:35 | INFO     | __main__ | === Iniciando: procesar_fuente_datos ===
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | Leyendo archivo: fuente_datos.csv
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | fuente_datos.csv: 100 fila(s) leída(s), estructura válida
+2026-07-03 08:06:35 | INFO     | src.cleaners.fuente_datos_cleaner | fuente_datos: procesadas=100, validas=100, rechazadas=0
+2026-07-03 08:06:35 | INFO     | src.resolvers.catalog_resolver | TipoFuente: creando 3 valor(es) nuevo(s) de catálogo
+2026-07-03 08:06:35 | INFO     | src.uploader | fuente_datos: 100 fila(s) insertada(s)
+2026-07-03 08:06:35 | INFO     | __main__ | fuente_datos: procesados=100, insertados=100, duplicados=0, rechazados=0
+2026-07-03 08:06:35 | INFO     | __main__ | === Iniciando: procesar_surveys ===
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | Leyendo archivo: surveys_part1.csv
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | surveys_part1.csv: 500 fila(s) leída(s), estructura válida
+2026-07-03 08:06:35 | INFO     | src.cleaners.surveys_cleaner | surveys_part1: procesadas=500, validas=500, rechazadas=0
+2026-07-03 08:06:35 | INFO     | src.resolvers.catalog_resolver | Clasificaciones: creando 3 valor(es) nuevo(s) de catálogo
+2026-07-03 08:06:35 | INFO     | src.resolvers.catalog_resolver | TipoFuente: creando 1 valor(es) nuevo(s) de catálogo
+2026-07-03 08:06:35 | INFO     | src.resolvers.fuente_datos_resolver | fuente_datos: creando 1 fila(s) nueva(s)
+2026-07-03 08:06:35 | INFO     | src.uploader | surveys_part1: 6 fila(s) insertada(s)
+2026-07-03 08:06:35 | INFO     | __main__ | surveys_part1: procesados=500, insertados=6, duplicados=0, rechazados=494
+2026-07-03 08:06:35 | INFO     | __main__ | === Iniciando: procesar_social_comments ===
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | Leyendo archivo: social_comments.csv
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | social_comments.csv: 200 fila(s) leída(s), estructura válida
+2026-07-03 08:06:35 | INFO     | src.cleaners.social_comments_cleaner | social_comments: procesadas=200, validas=200, rechazadas=0
+2026-07-03 08:06:35 | INFO     | src.resolvers.catalog_resolver | RedSocial: creando 3 valor(es) nuevo(s) de catálogo
+2026-07-03 08:06:35 | INFO     | src.uploader | social_comments: 200 fila(s) insertada(s)
+2026-07-03 08:06:35 | INFO     | __main__ | social_comments: procesados=200, insertados=200, duplicados=0, rechazados=0
+2026-07-03 08:06:35 | INFO     | __main__ | === Iniciando: procesar_web_reviews ===
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | Leyendo archivo: web_reviews.csv
+2026-07-03 08:06:35 | INFO     | src.loaders.base_loader | web_reviews.csv: 200 fila(s) leída(s), estructura válida
+2026-07-03 08:06:35 | INFO     | src.cleaners.web_reviews_cleaner | web_reviews: procesadas=200, validas=200, rechazadas=0
+2026-07-03 08:06:36 | INFO     | src.uploader | web_reviews: 200 fila(s) insertada(s)
+2026-07-03 08:06:36 | INFO     | __main__ | web_reviews: procesados=200, insertados=200, duplicados=0, rechazados=0
